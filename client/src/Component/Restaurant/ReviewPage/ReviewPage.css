@@ -1,0 +1,167 @@
+.review_container.active {
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.review_container.disable {
+  width: 0px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.review_container.active h1 {
+  font-size: 27px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.review_container img {
+  width: 300px;
+}
+
+.title_close {
+  width: 450px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.title_close h1 {
+  font-size: 20px !important;
+}
+
+.review_box {
+  width: 450px;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 10px;
+}
+
+.review_box::-webkit-scrollbar {
+  width: 0px;
+}
+
+.review_box h4 {
+  margin-left: 10px;
+}
+
+.single_review_box {
+  width: 450px;
+  min-height: 100px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.review_user_box {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review_user_box h1 {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  font-size: 19px !important;
+  color: #fff;
+  background-color: #48c479;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.review_details_box {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.review_details_box h5 {
+  font-size: 15px;
+}
+
+.review_details_box p {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #686868;
+}
+
+.review_input {
+  width: 450px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review_input h4 {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+i {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.review_input_box {
+  width: 450px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.review_input_box textarea {
+  width: 70%;
+  height: 90%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: Heebo, "sans-serif";
+  outline: none;
+}
+
+.review_input_box button {
+  width: 120px;
+  height: 45px;
+  background-color: #48c479;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}

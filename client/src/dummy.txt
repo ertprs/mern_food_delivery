@@ -1,0 +1,153 @@
+{/* {menuData
+          ?.filter((menus) => menus.category.includes("Soups"))
+          .map((menu) => (
+            <div className="menu_box">
+              <div className="menu_box_details">
+                {menu.isVeg ? <Vegicon /> : <Nonvegicon />}
+                <h3>{menu.name}</h3>
+                <h5>&#x20b9;{menu.price}</h5>
+                <p>{menu.description}</p>
+              </div>
+              <div className="menu_box_image">
+                <img src={menu.image} alt="Menu Image" />
+                <button>ADD</button>
+              </div>
+            </div>
+          ))} */}
+
+
+{categorys?.map((cate) => {
+          menuData
+            ?.filter((menus) => menus.category.includes(cate))
+            .map((menu, index) => (
+              <div className="menu_box" key={index}>
+                <div className="menu_box_details">
+                  {menu.isVeg ? <Vegicon /> : <Nonvegicon />}
+                  <h3>{menu.name}</h3>
+                  <h5>&#x20b9;{menu.price}</h5>
+                  <p>{menu.description}</p>
+                </div>
+                <div className="menu_box_image">
+                  <img src={menu.image} alt="Menu Image" />
+                  <button>ADD</button>
+                </div>
+              </div>
+            ));
+        })}
+
+
+
+
+import PlacesAutocomplete, {
+  geocodeByAddress,
+  getLatLng,
+} from "react-places-autocomplete";
+
+
+  const [address, setAddress] = useState("");
+  const [coordinates, setCoordinates] = React.useState({
+    lat: null,
+    lng: null,
+  });
+
+  const handleSelect = async (value) => {
+    const results = await geocodeByAddress(value);
+    const latLng = await getLatLng(results[0]);
+    setAddress(value);
+    setCoordinates(latLng);
+  };
+
+        {/* <PlacesAutocomplete
+            value={address}
+            onChange={handleChange}
+            onSelect={handleSelect}
+          >
+            {({
+              getInputProps,
+              suggestions,
+              getSuggestionItemProps,
+              loading,
+            }) => (
+              <div className="input_box">
+                <input
+                  {...getInputProps({
+                    placeholder: "Search for area, street name...",
+                  })}
+                />
+                <div className="suggestion_box">
+                  {loading ? <div>Loading...</div> : null}
+                  {suggestions.map((suggestion) => {
+                    return (
+                      <div className="single_suggestion">
+                        <LocationOnOutlinedIcon
+                          className="locationIcon"
+                          style={{ color: "#a3a6b4" }}
+                        />
+                        <div className="result_names">
+                          <h5>{suggestion.formattedSuggestion.mainText}</h5>
+                          <p>{suggestion.formattedSuggestion.secondaryText}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </PlacesAutocomplete> */}
+
+
+
+          <div className="restaurant_cart_details">
+            <img src="/images/restaurantimage.jfif" />
+            <div className="restaurant_info">
+              <h3>Falahaar & Kota Kachori</h3>
+              <p>Banaswadi</p>
+              <div className="cartSpacer"></div>
+            </div>
+          </div>
+          {userCartData.map((cart) => (
+            <div className="single_cart_box">
+              {cart.product.isVeg ? <Vegicon /> : <Nonvegicon />}
+              <div className="product_name">
+                <p>{cart.product.name}</p>
+              </div>
+              <div className="quantity_box">
+                <RemoveIcon
+                  className="minusIcon"
+                  onClick={() => {
+                    const cartItem = {
+                      product: cart.product._id,
+                      quantity: 1,
+                      price: cart.product.price,
+                    };
+                    dispatch(decreaseCartItemAction(cartItem, token));
+                  }}
+                />
+                <p>{cart.quantity}</p>
+                <AddIcon
+                  className="plusIcon"
+                  onClick={() => {
+                    const cartItem = {
+                      product: cart.product._id,
+                      quantity: 1,
+                      price: cart.product.price,
+                    };
+                    dispatch(addToCartAction(cartItem, token));
+                  }}
+                />
+              </div>
+              <p>
+                <span>&#x20B9;</span>
+                {cart.price}
+              </p>
+            </div>
+          ))}
+
+
+
+          latitude:"12.912990"
+longitude:"77.595894"
+
+
+latitude:"13.088567550342441"
+longitude:"79.65645388280336"

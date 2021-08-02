@@ -1,0 +1,95 @@
+.profile_container {
+  width: 100%;
+  height: calc(100vh - 75px);
+  background: #37718e;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_details {
+  width: 80%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile_box h1 {
+  color: #fff;
+  font-size: 35px;
+}
+
+.profile_box h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  word-spacing: 10px;
+  letter-spacing: 0.5px;
+}
+
+.profile_details button {
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  outline: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.profile_options_container {
+  width: 88%;
+  height: 81%;
+  background-color: #fff;
+  display: flex;
+}
+
+.profile_options {
+  width: 25%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.profile_options_data {
+  width: 75%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.profile_links {
+  width: 100%;
+  height: 100%;
+  background-color: #edf1f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_links h3 {
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: rgb(27, 27, 27);
+}
+
+.profile_links h3:hover {
+  background-color: #fff;
+}

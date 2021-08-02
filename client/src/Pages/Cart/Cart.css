@@ -1,0 +1,36 @@
+.empty_cart {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty_cart img {
+  width: 310px;
+}
+
+.empty_cart h4 {
+  font-size: 18px;
+  color: #535673;
+  margin-top: 20px;
+}
+
+.empty_cart p {
+  font-size: 14px;
+  color: #535673;
+  margin-top: 10px;
+}
+
+.empty_cart button {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #6cd64c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

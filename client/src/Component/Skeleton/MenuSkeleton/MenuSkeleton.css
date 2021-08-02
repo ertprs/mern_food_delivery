@@ -1,0 +1,26 @@
+.menu_box_loading {
+  width: 90%;
+  height: 180px;
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu_box_details_loading {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu_box_image_loading {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+.slider_container {
+  width: 100%;
+  height: 260px;
+  background-color: #171a29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.mySwiper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperSlide img {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}

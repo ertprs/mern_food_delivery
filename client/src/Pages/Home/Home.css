@@ -1,0 +1,142 @@
+.home_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.home_restaurant_container {
+  width: 85%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.restaurant_box {
+  width: 270px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.restaurant_box h5 {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.restaurant_box_details {
+  width: 98%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant_box_details h5 {
+  width: 30px;
+  color: #fff;
+  font-size: 12px;
+  padding: 1.5px 7px 1.5px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant_box_details p {
+  font-size: 13px !important;
+}
+
+.restaurant_box p {
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+}
+
+.restaurant_box img {
+  width: 270px;
+}
+
+.restaurant_box:hover {
+  box-shadow: 0px 0px 2px rgb(145, 145, 145);
+}
+
+.horizontalspacer {
+  width: 97%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.offerText {
+  color: brown !important;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.percentageIcon {
+  color: #fff;
+  padding: 2px;
+  background-color: brown;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1.5px dashed #fff;
+}
+
+.restaurant_box button {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #0251ac;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.restaurant_box button:hover {
+  color: #63c088;
+}
+
+.starGreen {
+  background-color: #48c479;
+}
+
+.starOrange {
+  background-color: #db7c38;
+}
+
+.starRed {
+  background-color: rgb(173, 0, 0);
+}
+
+.scroll_top {
+  width: 40px;
+  height: 40px;
+  background-color: #63c088;
+  color: #fff;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,120 @@
+.register_container {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  overflow: hidden;
+}
+
+.register_left_container {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_left_container img {
+  width: 600px;
+}
+
+.register_right_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_right_container img {
+  width: 70px;
+}
+
+.register_right_container h2 {
+  margin-top: 20px;
+}
+
+.form_group {
+  width: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.register_right_container form input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 30px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.register_right_container form label {
+  color: #3f3f3f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+  font-size: 14px;
+}
+
+.register_right_container form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #005ac2;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.content_name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.4s ease;
+}
+
+input:focus + .label_name .content_name,
+input:valid + .label_name .content_name {
+  transform: translateY(-120%);
+  font-size: 14px;
+  color: #0271f0;
+}
+
+.form_group input:focus + .label_name::after {
+  transform: translateX(0%);
+}
+
+.account_already {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444444;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #2dd096;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

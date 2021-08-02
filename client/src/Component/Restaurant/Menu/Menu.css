@@ -1,0 +1,127 @@
+.menu_container {
+  width: 80%;
+  height: auto;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.categories_container {
+  width: 20%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  border-right: 1px solid #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.categories_container a {
+  text-transform: capitalize;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #585b68;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.categories_container a:hover {
+  color: #f33884;
+}
+
+.menu_list_container {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_box {
+  width: 90%;
+  height: 200px;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+}
+
+.menu_box_details {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu_box_details h3 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.menu_box_details h5 {
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 22px;
+  margin-top: 8px;
+}
+
+.menu_box_details p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #686b78;
+  line-height: 20px;
+  margin-top: 8px;
+}
+
+.menu_box_image {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_box_image img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.menu_box_image button {
+  width: 90px;
+  padding: 9px 0px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  margin-top: -17px;
+  border: 1px solid rgb(214, 214, 214);
+  color: #60b246;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu_box_image button:hover {
+  box-shadow: 0px 0px 4px rgb(187, 187, 187);
+}
+
+.cart_container {
+  width: 30%;
+  height: 100vh;
+  padding-top: 30px;
+}

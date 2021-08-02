@@ -1,0 +1,152 @@
+.map_page_container {
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  z-index: 3;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.map_title_container {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gmap {
+  width: 90%;
+  height: 230px;
+}
+
+.address_tab {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.address_tab h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.address_tab p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.add_more_details {
+  width: 89%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid #218d00;
+  cursor: pointer;
+}
+
+.add_more_details p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #218d00;
+}
+
+.add_more_details h4 {
+  color: #218d00;
+}
+
+.map_page_container form {
+  width: 90%;
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map_page_container form input {
+  width: 95%;
+  padding: 21px 8px;
+  border: 1px solid #bbc2d4;
+  outline: none;
+}
+
+.save_proceed {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #4fb830;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.address_option {
+  width: 99%;
+  height: 100%;
+  border: 1px solid #bbc2d4;
+  display: flex;
+  cursor: pointer;
+}
+
+.home_option.disable {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_option.active {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.work_option.disable {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #bbc2d4;
+}
+
+.work_option.active {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #bbc2d4;
+  background-color: #000;
+  color: #fff;
+}
+
+.optionPara {
+  font-size: 13px;
+  margin-left: 7px;
+}

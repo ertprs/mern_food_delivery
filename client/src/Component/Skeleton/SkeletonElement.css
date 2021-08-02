@@ -1,0 +1,40 @@
+.skelton {
+  background-color: #f1f5ff;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.skeleton.text {
+  width: 80%;
+  height: 12px;
+  background-color: #f1f5ff;
+  margin-bottom: 8px;
+}
+
+.skeleton.title {
+  width: 40%;
+  height: 20px;
+  margin-bottom: 15px;
+  background-color: #f1f5ff;
+}
+
+.skeleton.image {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #f1f5ff;
+}
+
+.skeleton.menuImage {
+  width: 180px;
+  height: 110px;
+  border-radius: 5px;
+  background-color: #f1f5ff;
+}
+
+.skeleton.box {
+  width: 80px;
+  height: 15px;
+  background-color: #f1f5ff;
+  margin-bottom: 8px;
+}
