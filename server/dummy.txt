@@ -1,0 +1,26 @@
+  //   await User.findOne({ _id: req.user._id }, (err, user) => {
+  //     if (!user) {
+  //       res.status(400).json({ message: "no user found" });
+  //     } else {
+  //       user.name = req.body.name;
+  //       user.email = req.body.email;
+  //       user.password = req.body.password;
+  //       user.homeAddress.flat = req.body.homeAddress.flat;
+  //       user.homeAddress.area = req.body.homeAddress.area;
+  //       user.homeAddress.landmark = req.body.homeAddress.landmark;
+  //       user.homeAddress.address = req.body.homeAddress.address;
+  //       user.workAddress.flat = req.body.workAddress.flat;
+  //       user.workAddress.area = req.body.workAddress.area;
+  //       user.workAddress.landmark = req.body.workAddress.landmark;
+  //       user.workAddress.address = req.body.workAddress.address;
+  //     }
+
+  //     user
+  //       .save()
+  //       .then((myData) => {
+  //         res.status(200).json({ message: "Profile Updated" });
+  //       })
+  //       .catch((err) => {
+  //         res.status(400).json({ error: "unable to update " });
+  //       });
+  //   });
